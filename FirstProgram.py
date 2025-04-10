@@ -197,7 +197,11 @@
 # print(a) print hoga = [1, 4, 6, 2, 5]
 
 #list remove
-list= [6,7,3,5,19]
-list.remove(19)
-print(list) 
+# list= [6,7,3,5,19]
+# list.remove(19)
+# print(list) 
 #print hoga # = [6, 7, 3, 5]
+
+
+
+print("hi this is my new code for github ")
