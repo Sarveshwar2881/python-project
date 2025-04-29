@@ -1,1 +1,1 @@
-print("Sarveshwar")
+#2 types of lool 1st while loop and 2nd for loop.
