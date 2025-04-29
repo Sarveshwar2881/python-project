@@ -484,7 +484,7 @@
 # <class 'set'>
 
 # Add String in sets
-# sets={1,2,3,4,4,4,4,4, "brother","hello", "brother" }   # duplicate value should be skiped.
+# sets={1,2,3,4,4,4,4,4, "brother","hello", "brother" }   # duplicate value will be skiped.
 # print(sets)
 # PH--{1, 2, 3, 4, 'brother', 'hello'}   # unorderd print.
 
@@ -498,7 +498,7 @@
 # print(empty_set)
 # Ph--set()
 
-# Add value in empty set. (.add)
+# Add value in empty set. (.add(element))
 # empty_set = set()   
 # empty_set.add(1) #integer
 # empty_set.add(2)
@@ -506,7 +506,7 @@
 # print(empty_set)
 # PH-- {1, 2}
 
-# Remove value (.remove)
+# Remove value (.remove(element))
 # empty_set = set()   
 # empty_set.add(1) #integer
 # empty_set.add(2)
@@ -515,7 +515,7 @@
 # print(empty_set)
 # #PH-- {1}
 
-# # if remove vaule is not exists in set.
+# # if removed vaule is not exists in set.
 # empty_set = set()   
 # empty_set.add(1) #integer
 # empty_set.add(2)
@@ -529,6 +529,7 @@
 # student.add("2.student-Parmod")
 # student.add("3.student-Kishor")
 # print(student)
+# PH--{'3.student-Kishor', '2.student-Parmod', '1.student-Manoj'}
 
 # For add multipale numbers in one line.
 # number={1,2,3,4}
@@ -579,18 +580,37 @@
 # print(len(collection))
 
 # add 2 sets with unique values. (.union(set2))
-set1={2,4,6,8,10,11}
-set2={1,3,4,6,7,9,10}
-uniqe_values=set1.union(set2)
-print("uniqe values=",uniqe_values)
+# set1={2,4,6,8,10,11}
+# set2={1,3,4,6,7,9,10}
+# uniqe_values=set1.intersection(set2)
+# print("uniqe values=",uniqe_values)
 
 
-#print("uniqe values=",uniqe_values)
-#
-#
+# set1={2,9,5,8,1}
+# set2={2,4,5,12,}
+# popp=set1.pop()
+# print(popp)
+# print(set1)
+#print(set1.remove(0))
+
+# Difference show in set1 and set2 and retur unique value which is not exists in set2. Wiseversa.
+# set1={2,9,5,8,1}
+# set2={2,4,5,12,}
+# diff=set1.difference(set2) # 8 1 9
+# diff=set2.difference(set1) # 12 4
+# print(diff)
+
+# For update valuse add new values in main set duplicate value will be removed.
+# set1={2,9,5,8,1}
+# set2={2,4,5,12,}
+# update=set1.update(set2) # 8 1 9
+# print(update)
 
 
 
-
+a=31
+b=30
+#print(a>b)
+print(a>b and a==b)
 
 
