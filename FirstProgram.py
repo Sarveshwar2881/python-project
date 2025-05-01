@@ -1,9 +1,9 @@
-# str1 ="sa paragraph is a distinct section of writing, typically consisting of several sentences "
-# # str2 = "that focuses on a single idea or topic, helping to organize and structure written" 
-# # ends = str1.endswith("tences")
-# # capi = str2.capitalize()
-# # print(len1) 
-# # print(len2) 
+str1 ="sa paragraph is a distinct section of writing, typically consisting of several sentences "
+str2 = "that focuses on a single idea or topic, helping to organize and structure written" 
+ends = str1.endswith("tences")
+capi = str2.capitalize()
+print(len1) 
+print(len2) 
 # # str1 ="Sarveshwar Kumar"
 # name=input("What is your name--- ")
 # print("your name"+name)
@@ -204,4 +204,4 @@
 
 
 
-print("hi this is my new code for vs code ")
+# print("hi this is my new code for vs code ")
