@@ -608,9 +608,26 @@
 
 
 
-a=31
-b=30
-#print(a>b)
-print(a>b and a==b)
+# a=31
+# b=30
+# #print(a>b)
+# print(a>b and a==b)
 
 
+Dict={
+     '0': 'Daily',
+     '1':'Weekly'
+}
+Dict1={
+     '3': 'Continously',
+     '4':'Monthly'
+}
+key = 5
+if str(key) in Dict1:
+    print(Dict1[str(key)])
+else:
+    print("0")
+
+Dict1.update({'5':"Custom"})
+print(Dict1)
+ 
