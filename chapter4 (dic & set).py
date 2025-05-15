@@ -49,7 +49,7 @@
 # print(dict.values())
 # print(dict.items())
 
-# print(dict["key"])
+# print(dict["Subject-lsit"])
 # print(dict["name"])
 # print(dict["key"], dict["name"])
 
@@ -90,6 +90,7 @@
 # }
 # #students['student1'] ['class']= "MBBS"
 # print(students['student1']['class']) 
+
 # how to crate (create 2 dictionary in dicitionary) and print.
 # students={
 #     'student1':{
@@ -169,7 +170,7 @@
 #      'class2':{
 #          'student1 Subject' : ["hindi", 'English'],
 #          'student2 Subject' : ["Math", 'science'],
-#           'student3 Subject' : ["SST", 'Drawing'],
+#          'student3 Subject' : ["SST", 'Drawing'],
 #      }   
 #   }
 # }
@@ -183,10 +184,10 @@
 #      'student1 roll no': 0.1,
 #      'student2 roll no': '02',
 #      'student3 roll no': '03',
-#      'class2': {
-#          'student1 Subject' : ["hindi", 'English'],
-#          'student2 Subject' : ["Math", 'science'],
-#           'student3 Subject' : ["SST", 'Drawing'],
+#     'class2': {
+#         'student1 Subject' : ["hindi", 'English'],
+#         'student2 Subject' : ["Math", 'science'],
+#         'student3 Subject' : ["SST", 'Drawing'],
 #      }   
 #   }
 # }
@@ -194,7 +195,7 @@
 # print(school['class1'].keys())
 # print(school['class1']['class2'].keys())
 
-# if you want to print in list format.
+# if you want to print only keys in list format.
 # school={'student1': 'Manish',
 #         'student2': 'Rakesh',
 #         'student3': 'Mohit',
@@ -205,11 +206,12 @@
 #     'class2': {
 #          'student1 Subject' : ["hindi", 'English'],
 #          'student2 Subject' : ["Math", 'science'],
-#           'student3 Subject' : ["SST", 'Drawing'],
+#          'student3 Subject' : ["SST", 'Drawing'],
 #      }   
 #   }
 # }
-# print(list(school['çlass1']['class2'].keys()))
+# print(list(school['class1']['class2'].keys()))
+# print(tuple(school['class1']['class2'].keys()))
 # class1_values = school['class1'].values()
 # print(class1_values)
 # print(type(school))
@@ -222,6 +224,10 @@
 # print(list(school.values()))
 # print(list(school['class1'].values()))
 # print(list(school['class1']['class2'].values()))
+
+# print(tuple(school.values()))
+# print(tuple(school['class1'].values()))
+# print(tuple(school['class1']['class2'].values()))
 
 # print(len(list(school.values())))
 # print(len(list(school['class1'].values())))
@@ -259,6 +265,8 @@
 # print(school['class1'].values)
 # print(school['class2'].values())   
 
+
+# how to change subject is nexted dictironary 
 # school={'student1': 'Manish',
 #         'student2': 'Rakesh',
 #         'student3': 'Mohit',
@@ -614,20 +622,20 @@
 # print(a>b and a==b)
 
 
-Dict={
-     '0': 'Daily',
-     '1':'Weekly'
-}
-Dict1={
-     '3': 'Continously',
-     '4':'Monthly'
-}
-key = 5
-if str(key) in Dict1:
-    print(Dict1[str(key)])
-else:
-    print("0")
+# Dict={
+#      '0': 'Daily',
+#      '1':'Weekly'
+# }
+# Dict1={
+#      '3': 'Continously',
+#      '4':'Monthly'
+# }
+# key = 5
+# if str(key) in Dict1:
+#     print(Dict1[str(key)])
+# else:
+#     print("0")
 
-Dict1.update({'5':"Custom"})
-print(Dict1)
+# Dict1.update({'5':"Custom"})
+# print(Dict1)
  
