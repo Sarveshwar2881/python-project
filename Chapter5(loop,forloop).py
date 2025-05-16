@@ -146,6 +146,7 @@
 #     t+=1
 #     # print(t, "x" ,t, "=" ,t*n)
 #     # t=t+1
+# print("hello")
 # list=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 # oddnum = []
 # evennum = []
@@ -160,23 +161,19 @@
 # print ('Even Numbers are: ', evennum)
 # print ('Odd Numbers are: ', oddnum)
 
-list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 1151,10, 11, 12,1823, 13, 14, 15,1823,1823]
-i = 0  
-while i < len(list):
-    if list[i] == 1823:
-        print(list[i])
-        print("Value of index : ",i)
-        break
-    i = i + 1
-    
-# else:
-#     print("not found")
 
-    
-
-
-
-
+# search any number in ths list and its index number through while loop.
+# list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 1151,10, 11, 12,1823, 13, 14, 15,1823,1823]
+# i = 0  
+# while i < len(list):
+#     if list[i] == 1823:
+#         print(list[i])
+#         i=i+1
+#     #     print("Value of index : ",i)
+#     #     i = i + 1
+#     # else:
+#     #     print("not found")
+#print("hello")
 # Codition:- if age is above to 18 then ticket price is 12 and age is blow to 18 then ticeket 
 # price 8. if day wednesday then ticket price -2 ruppes.
 # age=int(input("Enter Age:-"))
@@ -303,14 +300,8 @@ while i < len(list):
 #     print(char)
 # else:
 #     print("SARVESHWAR")
-    
-
-
-
 
 # print(range(5))
-
-
 # big way to print in sequence.
 # seq=range(5)
 # print(seq[0])
@@ -395,4 +386,16 @@ while i < len(list):
 # idx=len(list)-1
 # while idx > 0:
 #     print(list[idx])
-#     idx=idx-1        
+#     idx=idx-1    
+# 
+
+nums=(1,5,8,6,16,49,78,81,96,101,49,240,160,49,850.7001)
+x=49
+i=0
+while i < len(nums):
+    if nums[i] == x:
+        print(nums[i],"Found its Index:-:",i) 
+    else:
+        print("find continuing")
+    i=i+1    
+    
