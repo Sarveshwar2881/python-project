@@ -314,6 +314,6 @@
 #     print(i)
 
 # Third-- print the multiplication table of number n.
-table = int(input("enter table write you want:-"))
-for i in range(1,11):
-    print(table*i)        
+# table = int(input("enter table write you want:-"))
+# for i in range(1,11):
+#     print(table*i)        
