@@ -389,13 +389,15 @@
 #     idx=idx-1    
 # 
 
-nums=(1,5,8,6,16,49,78,81,96,101,49,240,160,49,850.7001)
-x=49
-i=0
-while i < len(nums):
-    if nums[i] == x:
-        print(nums[i],"Found its Index:-:",i) 
-    else:
-        print("find continuing")
-    i=i+1    
+# nums=(1,5,8,6,16,49,78,81,96,101,49,240,160,49,850.7001)
+# x=49
+# i=0
+# while i < len(nums):
+#     if nums[i] == x:
+#         print(nums[i],"Found its Index:-:",i) 
+#     else:
+#         print("find continuing")
+#     i=i+1    
+
+# range function
     

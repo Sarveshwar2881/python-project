@@ -151,11 +151,11 @@
 #     if nums[i] == x:
 #         print(nums[i],"Found its Index:-:",i) 
 #         y=y+1
-#     if  y==4:
-#         print("4nd found")
+#     if  y==6:
+#         print("10nd found")
 #         break
 #     else:
-#         print("find continuing")
+#         print("Not Found")
 #     i=i+1 
 
 # how  to Use continue with simple loop?
@@ -180,9 +180,140 @@
 #         continue
 #     print(i)
 #     i=i+1
-#  how to use for loop in simple code.
 
+# how to use for loop in simple code.
+# list=[1,2,3,4,5]
+# for el in list:
+#     print(el)
 
+# fruites instead of numbers.
+# list=["Mango","Apple","Banana","Grapes","Watermilon"]
+# for item in list:
+#     print(item)
+#
+# How to print in tuple
+# tup=(1,4,7,11,10,19,25)
+# for el in tup:
+#     print(el)
     
+# How to print string characters.?
+# str="SARVESHWAR"
+# for chr in str:
+#     print(chr)
 
+# Use of else?
+# str="Sarveshwar"
+# for el in str:
+#     print(el)
+# else:
+#     print("End the code.")
+
+# Use else in break condition.
+# str="Sarveshwar"  # finding (v)
+# for el in str:
+#     if el == "v":
+#         print("v-found")
+#         break
+#     print(el)
+# else:
+#     print("Finding End")
+
+# Question 1
+# Print the elements of the following list useing a loop?
+
+# list=[1,4,9,16,25,36,49,64,81,100]
+# for el in list:
+#     print(el)
+
+# Question 2  (linear search--i single line ke ander search kerta hai.)
+# Search for a number x in this tuple using loop?
+# tup=(1,4,9,16,25,36,49,64,81,100,36)
+# x=36
+# idx=0
+# for el in tup: 
+#     if el == x:
+#         print(x,"found of index:-",idx)
+#         idx=idx+1
+
+# str="Sarveshver"  # finding (v)
+# chr="v"
+# index = 0
+
+
+# for i in range(len(str)):
+#     if(chr==str[i]):
+#         print("index=",i)
+#         index=index+1
+#     if(index==2):
+#         print("Stop")
+#         break   
+#     if(index==0 and (len(str)-1)==i):
+#         print("Item not found.")
+
+# str="Sarveshver"  # finding (v)
+# chr="v"
+# index = 0
+# for el in str:
+#     if el == "v":
+#         print("v-found")
+#         break
+#     print(el)
+# else:
+#     print("Finding End")
+
+# str = "SarveshvarRishi"
+# char = "Z"
+# index = 0
+# for i in range(len(str)):
+#     if str[i].lower() == char.lower() :
+#         print("Character", str[i], "found at index", i)
+#         index += 1
+#         if index == 2:
+#             print("stop")
+#             break
+# else:
+#     print("Character Not Found")
+
+# # Range Function
+# print(range(5))                 # PH range(0, 5)
+
+# seq=range(1,6)
+# print(seq[0])
+# print(seq[1])
+# print(seq[2])
+# print(seq[3])
+# print(seq[4])
+# print(seq[5])
+
+# seq = range(10)
+# for i in seq:
+#     print(i)
+
+# for seq in range(10):         # 10 is stopping condition -1
+#     print(seq)              # PH 0,1,2,3,4,5,6,7,8,9
+
+#for seq in range(2,10):         # 2 is stating and 10 stopping condition -1
+#    print(seq) 
+
+# for seq in range(2,10,2):         # 2 is stating and 10 stopping condition -1, and 2 is step 
+#         print(seq)              # PH 2,4,6,8
+    
+# for seq in range(2,50,2):         # print even(2,4,6) number in between 2 to 50 count. 
+#     print(seq) 
+
+# for seq in range(1,50,2):         # print odd(1,3,5) number in between 2 to 50 count. 
+#     print(seq)
         
+# practice question
+# First-- print number from 1 to 100.
+# for i in range (1,101):
+#     print(i)
+
+# # Second-- print number from 100 to 1.
+# for i in range (100,0,-1):
+#     print(i)
+
+# Third-- print the multiplication table of number n.
+table = int(input("enter table write you want:-"))
+for i in range(1,11):
+    print(table*i)        
