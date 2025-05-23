@@ -98,4 +98,63 @@
 # value_list = list(value)
 # print(nums[12],Heros[3],dict_list[9],value_list[4], end= " ")
 
-#  if any sign is appearing in list of printed list then print in last with parnthahis.print()
+#  if any sign is appearing in list of end in printed list then print in last with parnthahis.print()
+
+# Factorial kya hota hai. "!" this is the sign of factoral. 5! ka factorial 5*4*3*2*1= 120
+
+# def cal_fact(n):
+#     fact=1
+#     for i in range (1, n+1):
+#         fact *=i
+#     print(fact)
+# cal_fact(7)
+
+# Q==4 waf convert USD to INR.
+
+#my way
+# def convt_usd(USD):
+#     UsdValue=USD * 85
+#     print("USD=",UsdValue)
+
+# convt_usd(2)
+
+# shradha khapra way
+
+
+# def converter(usd_inr):
+
+#     inr_val = usd_inr * 85
+#     print(usd_inr,"USD = INR",inr_val)
+
+# #usd_input = float(input("Enter USD: "))
+
+# converter(54)
+
+# REUCRSION -- as like loop's big brother.
+# if u want print 10,9,8,7,6,5,4,3,2,1(for revers counting)
+# def show(n):
+#     if n==0:
+#         return
+#     print(n)
+#     show(n-1)
+# show()
+
+# Use of factorial in programming.
+# def fact (n):
+#     if (n==1):
+#         return 1    
+#     return fact (n-1)*n
+
+# print(fact(20))
+
+# factorial Question 1
+# write a recursive function to calculate the sum of first n natural numbers.
+# SUM of n number.
+# def calu_sum(n):
+#     if n==0:
+#         return 0
+#     return calc_sum(n-1) + n
+
+
+
+    
