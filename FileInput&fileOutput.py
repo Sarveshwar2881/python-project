@@ -103,14 +103,8 @@
 # f.write("My name is sarvehwar kumar sharma & Rock007")
 # f.close()
 
-word= "sarvehwar"
-index=0
-with open("NEWFILEANDFOLDER.txt","r") as f:
-    data=f.read()
-    if (data.find(word) == -1):
-        print("not found")
-    else:
-        print("found", word, index[])
-    
+f=open("Acorp.py","w")
+f.write("Stating of coding with python.")
+f.close()   
 
 
