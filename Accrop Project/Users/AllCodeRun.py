@@ -1,7 +1,14 @@
- 
+
+import GetUser,UpdateUser,EnableUser,DisableUser,CreateUser 
+
+
 def allcoderun():
-    user_create()
-    get_user
-    user_update()    
-    user_disable()
+    GetUser.get_user()
+    CreateUser.user_create()
+    UpdateUser.user_update()
+    DisableUser.user_disable()
+    EnableUser.user_enable()
+    
+
 allcoderun()
+

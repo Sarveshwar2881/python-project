@@ -15,7 +15,11 @@ def get_user():
 }
     
     headers= {"Activerole":"2", "Authorization":auth_token}
+
+
     response = requests.post(url, headers = headers ,json=paylod)
+
+    
     assert response.status_code == 200, response.text 
     json_data = response.json()
     print("json response body:" , json.dumps(json_data, indent=4))
