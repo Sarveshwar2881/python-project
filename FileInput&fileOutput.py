@@ -107,4 +107,11 @@ f=open("Acorp.py","w")
 f.write("Stating of coding with python.")
 f.close()   
 
-
+# # get search. framework.
+#  headers = {"Activerole":"2", "Authorization":auth_token}
+#     response = requests.post(url, headers = headers ,json=payload)
+#     if response.status_code == 200: 
+#         json_data = response.json()
+#         print("Framework search Successfully.by Code." , json.dumps(json_data, indent=4))
+#     else:
+#         print("Framework not found.")
