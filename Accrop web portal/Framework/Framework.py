@@ -3,7 +3,7 @@ import json
 
 base_url="https://70mzbzwmea.execute-api.ap-south-1.amazonaws.com" 
 
-auth_token="Bearer eyJraWQiOiJlYlZZOTl5XC8yK0ZoY0NHOFNyMFk2NSsrUWFwYitwWkxicksyWjNzOXFuWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0MTczOGRiYS02MGMxLTcwMWItYTA0OS00Y2QwMWFiYjMzZDQiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX2duSkJqWHFEQiIsImNsaWVudF9pZCI6IjRmaHQ5cjUwZnFrdGdxZjZxc2VraXRmYWlnIiwib3JpZ2luX2p0aSI6ImZkNGQ0YzE4LTVmZjQtNGJlOC04NTRjLWFmOTc2ZWM3NTFmMyIsImV2ZW50X2lkIjoiNWYzZjVlMTItYzZhOC00ZDE3LTg0MjAtZjg3MzcwNDA3N2IyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTc1MDA2NTY3NiwiZXhwIjoxNzUwMTUyMjE5LCJpYXQiOjE3NTAwNjU4MTksImp0aSI6IjMxYzQxYzQ0LWI5ODQtNDk2OC1iNTliLWYxOGNmY2MxZGMxYiIsInVzZXJuYW1lIjoiNDE3MzhkYmEtNjBjMS03MDFiLWEwNDktNGNkMDFhYmIzM2Q0In0.KgPBvWJHYXAwihknoatscH88TCp6Hv_Pz1V4wNZSRvJ7IocAleRZXbZAiUgfUf-XQaYI16S7esMzpU16kpBqxpiiPMHARPnX7TofZnWeT1Z23LiNQqnwU5wa8b1kdkXW2F6OdEXip-m0KY89ZZ1mh__KySNqi9YcG9TsuNI0gkFhYl6uHv3A0DgXTyE5eMk6sj2VWUFgxAZguEGDvIwcPaFjE6KkVp2GNEeu48mamWtDaLLlP9XuFLm2P4yjtMJbhWypkU3sFtUF3DIF3U7KMeD-p8KLieGTm1B4EshtSBwgd9DfdHwXrFf86cWV74W19cfK7B5bxvQoASbZLJ_Aow"
+auth_token="Bearer eyJraWQiOiJlYlZZOTl5XC8yK0ZoY0NHOFNyMFk2NSsrUWFwYitwWkxicksyWjNzOXFuWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0MTczOGRiYS02MGMxLTcwMWItYTA0OS00Y2QwMWFiYjMzZDQiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX2duSkJqWHFEQiIsImNsaWVudF9pZCI6IjRmaHQ5cjUwZnFrdGdxZjZxc2VraXRmYWlnIiwib3JpZ2luX2p0aSI6Ijk0M2YyYWE2LWFlNmUtNGU3MS1hNmFkLWMyNDliN2VkMTA0ZSIsImV2ZW50X2lkIjoiZTA1MzJkOGItYzQ5My00NjQwLTk4MDAtM2MwNWMzZmRmZTA0IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTc1MDA2ODk3NywiZXhwIjoxNzUwMTU1Mzg0LCJpYXQiOjE3NTAwNjg5ODQsImp0aSI6ImUxNDRjZjM2LTVkOWYtNDdkNy1hMWM4LWZlOGI2MGRlNmIzZSIsInVzZXJuYW1lIjoiNDE3MzhkYmEtNjBjMS03MDFiLWEwNDktNGNkMDFhYmIzM2Q0In0.YfZ072Zg202OTWu87fRRn2ScfmIJrPUa6NZ43SGrrAeCIUnU0qBxLPNB5J1nlaiOseuB8k1qacyOJoBp1fLELdw06_27Q4uyMiI5wVPDjqru2vSFds0PLet2Twk7aJSqKMLBKCpmbDHKQanq3OZ7jwWIgSxIhWAy5zYnASF1JgaliRNEY6Q_rYbqj6KV6OgyfY2o7c2I4IlRxiaVMoBj_5F193QP9VlyGA4XamVWSibW0UE-MCh_9r1ytohygdo_DVIeUpGR1-5jf-F5eWM7A2BFtEM5W3JOpBGzNFs2mEY7O4Wm14X3T7SnLwXONE_eE4Wm7XRDBmkAv8DoJ5wWiw"
 
 def framework_add(Name,description,regulatoryBody,reg_url):
     url = base_url +"/framework/add"
@@ -42,14 +42,11 @@ def framework_update(Fwork_id,name,description,regulatoryBody,website):
 
 
 # Get by id search framework.
-def framework_search(name):
+def framework_search(frameworkCount):
     url = base_url +"/framework/list"
-          
-    if name is framework_search:
-        print("Framework found")
-    else: 
-        print("framework not found")
-        
+    if frameworkCount  == 0:
+        print ("Framework not found.")    
+           
     payload={                   
         "id": "",
         "skip": 0,
@@ -68,5 +65,5 @@ def framework_search(name):
 
 
 # id = framework_add("ByCodeFrame003", "Description003 By Code", "By Code003","www.accorpwebportal.web.app")
-framework_update("684bf3b5af606a2b0ec68eba","ByCodeFrame003", "Description003 By Code", "By Code003","www.flipkart.com")
-#framework_search("ByCodeFrame003")
+# framework_update("684bf3b5af606a2b0ec68eba","ByCodeFrame003", "Description003 By Code", "By Code003","www.flipkart.com")
+framework_search("ByCodeFrame003")
