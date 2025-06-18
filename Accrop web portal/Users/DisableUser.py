@@ -18,5 +18,6 @@ def user_disable():
     assert response.status_code == 200, response.text 
     json_data = response.json()
     print("Disabled this user by Code." , json.dumps(json_data, indent=4))
+
 user_disable()
 

@@ -1,14 +1,5 @@
+from UserAUGD import  user_update
 
-import GetUser,UpdateUser,EnableUser,DisableUser,CreateUser 
+# id=user_create(4,"Raj09@mathur.com","Raj","Kumar","Mathur","+91","IN",600000)
 
-
-def allcoderun():
-    GetUser.get_user()
-    CreateUser.user_create()
-    UpdateUser.user_update()
-    DisableUser.user_disable()
-    EnableUser.user_enable()
-    
-
-allcoderun()
-
+user_update(2,"raj06@mathur.com","Raja Ji","68528afb0d4b379ff2191868","NewMathur004","Important","+91","IN","20001010")

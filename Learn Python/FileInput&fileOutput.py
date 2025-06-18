@@ -1,5 +1,5 @@
 # For crete a file.
-f = open(r"C:\Users\Sarveshwar Kumar\Desktop\Sarvesh\python\python-project\Sarvesh\Demo.txt","rt")
+f = open(r"C:\Users\Sarveshwar Kumar\Desktop\Sarvesh\python\python-project\Sarvesh\Demo.txt","r")
 data = f.read()
 print(data)
 print(type(data))
