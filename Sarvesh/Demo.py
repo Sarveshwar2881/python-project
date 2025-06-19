@@ -38,7 +38,7 @@
 # user_create(2,Raj@mathur.com,Raj,Kumar,Mathur,01122321668,91,IN,9718899143)  # ye fuction ko call kerta hai.
 
 
-with open(r"C:\Users\Sarveshwar Kumar\Desktop\Sarvesh\python\python-project\Accrop web portal\Users\URL.py", "a+") as f:
+with open(r"C:\Users\Sarveshwar Kumar\Desktop\Sarvesh\python\python-project\Accrop web portal\Criteria.py", "a+") as f:
     data = f.write("This is first line data.\n this is second line data.")  # <- add parentheses here
     print(data)
     print(type(data))

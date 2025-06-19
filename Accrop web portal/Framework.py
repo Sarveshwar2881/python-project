@@ -1,6 +1,6 @@
 import requests  
 import json 
-from Users.URL import headers, base_url
+from URL import headers, base_url
 
 
 def framework_add(Name,description,regulatoryBody,reg_url):
