@@ -1,5 +1,4 @@
-import requests  
-import json 
+import requests, json
 from URL import headers, base_url
 
 
@@ -16,17 +15,16 @@ def framework_add(Name,description,regulatoryBody,reg_url):
     assert response.status_code == 200, response.text  
     json_data = response.json()
     print("Framework added Successfully.by Code." , json.dumps(json_data, indent=4))
-    Fwork_id=json_data.get("name")
-    print(Fwork_id)
-    return Fwork_id
+    F_id=json_data.get("id")
+    return F_id
 
 
 
-# update Framework.
-def framework_update(Fwork_id,name,description,regulatoryBody,website):
-    targeturl = base_url +"/framework/update"
+# # update Framework.
+def framework_update(F_id, name, description, regulatoryBody, website):
+    url = base_url +"/framework/update"
     payload={                   
-    "id": Fwork_id,
+    "id": F_id,
     "name": name,
     "description": description,
     "regulatoryBody": regulatoryBody,
@@ -34,14 +32,15 @@ def framework_update(Fwork_id,name,description,regulatoryBody,website):
 }
     
 
-    response = requests.post(targeturl, headers = headers ,json=payload)
-    
+    response = requests.post(url, headers = headers ,json=payload)
     assert response.status_code == 200, response.text  
     json_data = response.json()
     print("Framework update Successfully.by Code." , json.dumps(json_data, indent=4))
+    print(F_id)
 
 
-# Get by id search framework.
+
+# # Framework Search by name
 
 def framework_search(name):
    
@@ -54,19 +53,23 @@ def framework_search(name):
         "searchQuery": name
     }
     
-   
     response = requests.post(url, headers = headers ,json=payload)
-    res_json = response.json()
+    response_json = response.json()
    
-    if res_json.get("frameworkCount") == 0:
+    if response_json.get("frameworkCount") == 0:
         print("framework not found")
     elif response.status_code == 200:    
-        print("framework found successfully.", json.dumps(res_json, indent=4))
+        print("framework found successfully.", json.dumps(response_json, indent=4))
     else:
-        print("Found error in framework.", res_json.text)
+        print("Found error in framework.", response_json)
 
 
 
-#id = framework_add("ByCodeFrame001", "Description001 By Code", "By Code001","www.accorpwebportal.web.app")
-framework_update("684bf3b5af606a2b0ec68eba","ByCodeFrame003", "Description003 By Code", "By Code003","www.flipkart.com")
-framework_search("bycode")
+# F_id = framework_add("Name1002", "Description001 By Code", "By Code001","www.accorp01webportal.web.app")
+
+# framework_update(F_id,"NewName1002", "Description001 By Code", "By Code001","www.accorp01webportal.web.app")
+
+# framework_search("NewName1002")
+
+
+

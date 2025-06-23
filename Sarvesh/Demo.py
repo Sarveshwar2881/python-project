@@ -39,7 +39,7 @@
 
 
 with open(r"C:\Users\Sarveshwar Kumar\Desktop\Sarvesh\python\python-project\Accrop web portal\Criteria.py", "a+") as f:
-    data = f.write("This is first line data.\n this is second line data.")  # <- add parentheses here
+    data = f.write("Welcome - Start Your Work.")  # <- add parentheses here
     print(data)
     print(type(data))
 
